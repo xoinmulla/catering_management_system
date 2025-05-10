@@ -1,0 +1,283 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+<style>
+        /* Your existing CSS remains unchanged */
+        body {
+            background-color: #f8f9fa;
+            color: #495057;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #000000 !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #adb5bd !important;
+        }
+        .content {
+            flex: 1;
+            padding: 20px 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+            width: 100%;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+        /* Navbar Styling */
+        
+        /* Header Styling */
+        .header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+        }
+        .header h2 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        /* Search Box */
+        .search-box {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        /* Client Cards */
+        .client-container {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .client-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease-in-out;
+            text-align: center;
+        }
+        .client-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        .client-card h4 {
+            color: #007bff;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .client-card p {
+            color: #555;
+            font-size: 14px;
+        }
+        .client-card i {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        /* Add Client Button */
+        .add-client-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-size: 18px;
+            text-decoration: none;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        .add-client-btn:hover {
+            background: linear-gradient(135deg, #0056b3, #004092);
+            transform: scale(1.1);
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #343a40;
+            color: white;
+            margin-top: 30px;
+        }
+
+    body {
+        background-color: #ffffff;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+    
+    .content {
+        flex: 1;
+        padding: 20px 0;
+    }
+    .container {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 800px; /* Adjust max-width as needed */
+        margin: 20px auto; /* Center the container */
+    }
+    .card {
+        background: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    .form-control {
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid #ced4da;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+    .btn-success:hover {
+        background-color: #1e7e34;
+        border-color: #1e7e34;
+    }
+    .btn-warning {
+        background-color: #ffc107;
+        border-color: #ffc107;
+        color: #212529;
+    }
+    .btn-warning:hover {
+        background-color: #e0a800;
+        border-color: #d39e00;
+        color: #212529;
+    }
+    .btn-info {
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+    }
+    .btn-info:hover {
+        background-color: #117a8b;
+        border-color: #10707f;
+    }
+    .lead {
+        color: #6c757d;
+        font-size: 1.1rem;
+    }
+    footer {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        margin-top: auto;
+        width: 100%;
+    }
+    .text-primary-emphasis {
+        color: #0a58ca !important; /* Bootstrap primary color */
+    }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-cup-fill"></i> Catering Management
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="color: black;">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                </li>
+                {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'client_list' %}">Clients</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'staff_list' %}">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                    
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sm btn-primary ms-2 text-white" href="{% url 'login' %}">
+                            <i class="bi bi-box-arrow-in-right"></i> Login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sm btn-success ms-2 text-white" href="{% url 'register' %}">
+                            <i class="bi bi-person-plus"></i> Register
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="container mt-5">
+        <div class="card">
+            <h2 class="text-primary-emphasis fw-bold mb-4">
+                <i class="bi bi-person-plus-fill"></i> Add New Client
+            </h2>
+            <p class="lead text-muted mb-3">Please fill out the form below to add a new client to our system.</p>
+            <form method="post">{% csrf_token %}
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter full name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contact" class="form-label">Phone Number</label>
+                    <input type="tel" name="contact" class="form-control" id="contact" placeholder="Enter phone number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter email address" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 py-2">
+                    <i class="bi bi-save-fill"></i> Save Client
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Catering Management | All Rights Reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
